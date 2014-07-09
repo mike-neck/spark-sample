@@ -27,4 +27,5 @@ jar {
     }
 }
 
-task stage(dependsOn: ['clean', 'build'])
+task stage(dependsOn: 'clean')
+stage.finalizedBy build
